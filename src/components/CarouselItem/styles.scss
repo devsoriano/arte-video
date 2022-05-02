@@ -1,0 +1,38 @@
+.carousel-item {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  width: 188px;
+  height: 340px;
+  margin-right: 24px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 450ms all;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+
+  &__img {
+    width: 188px;
+    height: 282px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 6px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #141414;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: #666666;
+  }
+}
+
+

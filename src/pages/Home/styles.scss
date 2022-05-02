@@ -1,0 +1,17 @@
+@import "./../../assets/styles/Vars.scss";
+
+body {
+  margin: 0;
+  font-family: $theme-font;
+  background: $main-color;
+}
+
+main {
+  max-inline-size: 1248px;
+  margin: auto;
+}
+
+.hero {
+  background-image: url("https://game-ecommerce-backend.s3.amazonaws.com/Hero.png");
+  block-size: 500px;
+}

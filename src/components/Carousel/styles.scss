@@ -1,0 +1,55 @@
+.carousel {
+  overflow: hidden;
+  padding-left: 0px;
+  width: 100%;
+  position: relative;
+
+  &__container {
+    transition: 450ms -webkit-transform;
+    transition: 450ms transform;
+    transition: 450ms transform, 450ms -webkit-transform;
+    font-size: 0;
+    white-space: nowrap;
+    margin: 20px 0px;
+    padding-bottom: 10px;
+
+    &:hover .carousel-item {
+      opacity: 0.3;
+
+      &:hover {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+        opacity: 1;
+      }
+    }
+  }
+
+  &__move {
+    display: flex;
+    justify-content: space-between;
+
+    &--left, &--right {
+      position: relative;
+      margin-top: -240px;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background-color: #5031A9;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: block;
+    }
+
+    &--left {
+      margin-left: -36px;
+      background-image: url('./../../assets/icons/preview.svg');
+    }
+
+    &--right {
+      margin-right: -36px;
+      background-image: url('./../../assets/icons/next.svg');
+    }
+  }
+}
